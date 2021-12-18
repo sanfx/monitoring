@@ -174,7 +174,7 @@ services:
     networks:
       - traefik_proxy
     command: -logtostderr -docker_only
-    hostname: '{{.Node.Hostname}}'
+    hostname: ${HOSTNAME}
     ports:
       - 8085:8080
     volumes:
